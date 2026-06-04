@@ -27,6 +27,15 @@ jobs:
           repository: vizualizr/log.o-m.kr-content
           token: ${{ secrets.CONTENT_REPO_TOKEN }}
           path: content
+      - name: Rename start.md to index.md for Quartz Root
+        run: |
+          if [ -f "content/pages/start.md" ]; then
+            mv content/pages/start.md content/index.md
+          elif [ -f "content/journals/start.md" ]; then
+            mv content/journals/start.md content/index.md
+          elif [ -f "content/start.md" ]; then
+            mv content/start.md content/index.md
+          fi
       - uses: actions/setup-node@v6
         with:
           node-version: 24
