@@ -1,6 +1,5 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  indexPage: "start"
   pageTitle: log.o-m.kr
   pageTitleSuffix: ""
   enableSPA: true
