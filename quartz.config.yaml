@@ -6,7 +6,7 @@ configuration:
   enablePopovers: false
   analytics:
     provider: plausible
-  locale: en-US, ko-KR
+  locale: ko-KR
   baseUrl: vizualizr.github.io/log.o-m.kr
   ignorePatterns:
     - private
